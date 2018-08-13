@@ -1,0 +1,31 @@
+body {
+    background-image:
+    url(../images/binding_light.png);
+}
+
+.navbar-dark .navbar-brand {
+    color: #4aaaa5;
+    font-size: 30px;
+}
+
+h1 {
+    border-bottom: #4aaaa5 5px;
+    padding-left: 10px;
+}
+
+.container {
+    background-color: #ffffff;
+
+}
+
+form {
+    background-color: #ffffff;
+    margin-left: 71px;
+    margin-right: 71px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-body {
+    background-color: #4aaaa5;
+}
