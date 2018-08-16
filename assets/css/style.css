@@ -29,3 +29,10 @@ form {
 .card-body {
     background-color: #4aaaa5;
 }
+
+.footer {
+    width: auto;
+    text-align: center;
+    background-color: darkslategray;
+    text: #ffffff;
+}
