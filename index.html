@@ -1,63 +1,144 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Bootstrap Portfolio</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.12/css/mdb.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
     <!-- external stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
- 
-  <body>
+
+<body>
+
     <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="index.html">James Dowd</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="index.html">About <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                    <a class="nav-item nav-link" href="index.html">About</a>
                     <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-item"><button id="contactUsButton" type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="">Contact</button>
                 </div>
-            </div>    
+            </div>
         </nav>
         <br>
 
     <!--about me section  -->
-        <div class="container">
-            <div class="row">
+    <div class="container">
+        <div class="row">
             <div class="col-md-4">
                 <h1>About Me</h1>
                 <br>
             </div>
-            </div>
         </div>
-
-    <!-- picture -->
-    <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <img src="assets/images/IMG_0546.jpg" alt="Family Pic" class="img-thumbnail">
-            </div>  
-            <div class="col-md-8">       
-            <p>I was born on February 15, 1980 and grew up in Issaquah, Washington.  After completing high school, I attended California Lutheran University and graduated with a B.S. in Sports Medicine.</p>
-            <p>Post-college, I worked as an Athletic Trainer in several different settings, including professional baseball with the Boston Red Sox organization.  I currently work in business development for a MedTech company and reside on Camano Island with my wife Susan, daughter Isabel, son William, and dog Finn.</p>
-            </div>   
-        </div> 
-    </div>    
-    <br>
-      
-    <!-- footer -->
-    <div class="footer">
-        <span class="text-white">Copyright &#169
-        </span>
+            </div>
+            <div class="col-md-8">
+                <p>I was born on February 15, 1980 and grew up in Issaquah, Washington. After completing high school, I
+                    attended California Lutheran University and graduated Magna Cum Laude with a B.S. in Sports Medicine.</p>
+                <p>Post-college, I worked as an Athletic Trainer in several different settings, including professional
+                    baseball with the Boston Red Sox organization. I currently work in business development for a
+                    MedTech company and reside on Camano Island with my wife Susan, daughter Isabel, son William, and
+                    dog Finn.</p>
+            </div>
+        </div>
     </div>
+    <br>
 
-  </body>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="full-name" class="col-form-label">Your Name:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="submitter-email" class="col-form-label">Your E-mail:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Send message!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-light pt-4">
+
+            <!-- Footer Elements -->
+            <div class="container">
+    
+                <!-- Social buttons -->
+                <ul class="list-unstyled list-inline text-center">
+                    <!-- Facebook -->
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-lg btn-fb" href="https://www.facebook.com/james.dowd.18"><i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <!-- Linkedin -->
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-lg btn-li" href="https://www.linkedin.com/in/james-dowd-1b080b14/"><i
+                                class="fa fa-linkedin"></i>
+                        </a>
+                        </a>
+                    </li>
+                    <!--Github-->
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-lg btn-git" href="https://github.com/jdowd215"><i class="fa fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+    
+            </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.12/js/mdb.min.js"></script>
+
+</body>
+
 </html>
