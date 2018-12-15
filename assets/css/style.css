@@ -7,7 +7,7 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-    font-family: 'Proza Libre', sans-serif;
+        font-family: 'Proza Libre', sans-serif;
 }
 
 .navbar {
@@ -53,19 +53,26 @@ p {
     border-radius: 15px;
 }
 
-img {
+.weekenderImg {
     height: 200px;
+    width: 400px;
+}
+
+.card-img-top {
+    height: 200px; 
     width: 200px;
 }
 
 #whiteHouse {
     width: 200px;
-    margin-left: 400px; 
+    /* margin-left: 400px;  */
 }
 
 footer {
     background-color: #393f4d;
-    position: absolute;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
 }
 
